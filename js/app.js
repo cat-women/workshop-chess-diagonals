@@ -1,12 +1,11 @@
 import Chessboard from "./chessboard.js";
 
-console.log("here")
 
 document.addEventListener("DOMContentLoaded",async function ready(){
-	console.log("here")
-
+	
 	var boardEl = document.getElementById("board");
 	var clearHighlightsBtn = document.getElementById("clear-highlights-btn");
+
 	Chessboard.draw(boardEl);
 
 	boardEl.addEventListener("click",onClickTile,false);
